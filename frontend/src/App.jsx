@@ -25,7 +25,7 @@ import EnrolledCourse from './pages/EnrolledCourse'
 import ViewLecture from './pages/ViewLecture'
 import SearchWithAi from './pages/SearchWithAi'
 import getAllReviews from './customHooks/getAllReviews'
-import policy from './pages/policy'
+import Policy from './pages/policy'
 export const serverUrl = "https://api.vidyakumbh.com"
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
         <Route path='/enrolledcourses' element={userData?<EnrolledCourse/>:<Navigate to={"/signup"}/>}/>
          <Route path='/viewlecture/:courseId' element={userData?<ViewLecture/>:<Navigate to={"/signup"}/>}/>
          <Route path='/searchwithai' element={userData?<SearchWithAi/>:<Navigate to={"/signup"}/>}/>
-        <Route path='/policies' element={<policy/>}/>
+        <Route path='/policies' element={<Policy/>}/>
         
         
         <Route path='/dashboard' element={userData?.role === "educator"?<Dashboard/>:<Navigate to={"/signup"}/>}/>
