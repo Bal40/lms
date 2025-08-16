@@ -3,6 +3,7 @@ import razorpay from 'razorpay'
 import User from "../models/userModel.js";
 import dotenv from "dotenv"
 dotenv.config()
+console.log("RAZORPAY_KEY_ID at runtime:", process.env.RAZORPAY_KEY_ID);
 const razorpayInstance = new razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_SECRET,
