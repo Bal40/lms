@@ -43,7 +43,8 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-10 pt-5 text-sm text-center text-gray-500">
-        © {new Date().getFullYear()} LearnAI. All rights reserved.
+        © {new Date().getFullYear()} VidyaKumbh. All rights reserved.
+
       </div>
     </footer>
   );
